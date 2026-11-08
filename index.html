@@ -1,0 +1,380 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Emelda ❤️</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 35px 16px;
+  font-family: Georgia, serif;
+  color: #fff1f7;
+  text-align: center;
+  background:
+    radial-gradient(circle at 50% 15%, #72264d, transparent 40%),
+    linear-gradient(160deg, #16051d, #350b30, #12071e);
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.badge {
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: #f9a8d4;
+}
+
+h1 {
+  font-size: clamp(32px, 8vw, 55px);
+  color: #ffd1e8;
+  text-shadow: 0 0 25px #fb7185;
+  margin-bottom: 5px;
+}
+
+.heart {
+  font-size: 95px;
+  margin: 18px 0;
+  animation: heartbeat 1.2s infinite;
+  filter: drop-shadow(0 0 25px #fb7185);
+  cursor: pointer;
+  user-select: none;
+}
+
+@keyframes heartbeat {
+  50% { transform: scale(1.17); }
+}
+
+.card {
+  padding: 25px 20px;
+  border: 1px solid #ffffff25;
+  border-radius: 26px;
+  background: #ffffff0b;
+  box-shadow: 0 0 40px #fb718520;
+  backdrop-filter: blur(8px);
+}
+
+h2 { color: #fbcfe8; }
+
+.intro {
+  line-height: 1.9;
+  color: #fce7f3;
+}
+
+button {
+  padding: 13px 20px;
+  margin: 9px 5px;
+  border: 1px solid #ffffff30;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #be185d, #9333ea);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px #f472b640;
+}
+
+button:active { transform: scale(.96); }
+
+#confession {
+  display: none;
+  text-align: left;
+  line-height: 2;
+  font-size: 16px;
+  color: #fce7f3;
+  margin-top: 22px;
+  animation: appear 1s ease;
+}
+
+#confession p { margin-bottom: 18px; }
+
+.highlight {
+  text-align: center;
+  font-size: 21px;
+  color: #fda4af;
+  font-weight: bold;
+  text-shadow: 0 0 12px #fb7185;
+}
+
+#response {
+  display: none;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 18px;
+  background: #ffffff10;
+  color: #fbcfe8;
+  line-height: 1.8;
+  animation: appear .8s ease;
+}
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.music {
+  margin: 20px auto;
+  padding: 14px;
+  border-radius: 18px;
+  background: #ffffff0a;
+}
+
+footer {
+  margin-top: 25px;
+  color: #f9a8d4;
+  font-size: 12px;
+}
+
+.petal {
+  position: fixed;
+  top: -30px;
+  pointer-events: none;
+  z-index: 0;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to { transform: translateY(110vh) rotate(600deg); opacity: 0; }
+}
+
+.burst {
+  position: fixed;
+  pointer-events: none;
+  z-index: 20;
+  animation: burst 1.2s ease-out forwards;
+}
+
+@keyframes burst {
+  from { transform: translate(0,0) scale(.5); opacity: 1; }
+  to {
+    transform: translate(var(--x),var(--y)) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .card { padding: 22px 16px; }
+  #confession { font-size: 15px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="badge">A MESSAGE FROM MY HEART</div>
+
+<h1>For Emelda ❤️</h1>
+
+<div class="heart" onclick="heartBurst(event)">💗</div>
+
+<div class="card">
+
+<h2>There is something I need to tell you...</h2>
+
+<div class="intro">
+Some feelings are difficult to explain.<br>
+Some words take courage to say.<br>
+And some people become special without even knowing it. 🌹
+</div>
+
+<button onclick="openConfession()">Open My Heart 💌</button>
+
+<div id="confession">
+
+<p>Dear Emelda, ❤️</p>
+
+<p>
+There is something I have been carrying in my heart for quite some time, something I have tried so hard to keep to myself. But honestly, I don't think I can continue pretending that my feelings are just ordinary.
+</p>
+
+<p>
+From the very first day we met, the day you reported to Karatina, something about you caught my attention. I remember how nervous I was. I wanted to open up to you, to tell you what was happening inside my heart, but somehow I couldn't find the courage.
+</p>
+
+<p>
+Every time I thought about telling you, I would imagine a hundred different things. What if you didn't feel the same? What if things became awkward? What if I ruined something beautiful before it even had a chance to begin?
+</p>
+
+<p>
+So I kept quiet. I tried to control my feelings, convince myself to wait, and act as though everything was normal. But the truth is, Emelda, my feelings for you have continued growing.
+</p>
+
+<p>
+Sometimes I find myself smiling at the smallest thoughts of you. Sometimes I wish I could simply tell you everything without worrying about how it might sound. And sometimes I wonder whether you have ever noticed just how special you have become to me.
+</p>
+
+<p>
+Today, I have decided to be honest with you. Not because I expect anything from you, but because I believe some feelings deserve to be expressed rather than hidden forever.
+</p>
+
+<p class="highlight">
+I like you, Emelda. Truly. ❤️
+</p>
+
+<p>
+And if your heart ever feels something similar, I would love the opportunity to get to know you in a deeper, more beautiful way.
+</p>
+
+<p>
+I would love to share laughter with you, meaningful conversations, little moments, beautiful memories, and perhaps a story that neither of us expected to begin.
+</p>
+
+<p>
+But most importantly, I want you to know that your feelings matter too. You deserve honesty, kindness, patience, and the freedom to express exactly what is in your heart.
+</p>
+
+<p>
+Whatever your response may be, thank you for being someone who inspired me to write these words.
+</p>
+
+<p class="highlight">
+With a heart that finally found its courage,<br>
+Someone who likes you more than words can explain. 💗
+</p>
+
+<h2 style="text-align:center">What does your heart say? 🌹</h2>
+
+<div style="text-align:center">
+
+<button onclick="chooseResponse('same')">
+💕 I feel the same
+</button>
+
+<button onclick="chooseResponse('time')">
+🌷 I need time
+</button>
+
+<button onclick="chooseResponse('talk')">
+💌 Let's talk
+</button>
+
+<button onclick="chooseResponse('friend')">
+🤍 Just friends
+</button>
+
+</div>
+
+<div id="response"></div>
+
+</div>
+</div>
+
+<div class="music">
+<p>🎵 A little music for this moment</p>
+<button onclick="toggleMusic()" id="musicButton">
+▶ Play Romantic Music
+</button>
+<p style="font-size:11px;color:#f9a8d4">
+Music starts when you press play.
+</p>
+</div>
+
+<footer>
+Made with courage, sincerity & ❤️
+</footer>
+
+</div>
+
+<audio id="music" loop preload="none">
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+function openConfession() {
+  document.getElementById("confession").style.display = "block";
+  document.getElementById("confession").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+
+function toggleMusic() {
+  const music = document.getElementById("music");
+  const button = document.getElementById("musicButton");
+
+  if (music.paused) {
+    music.play().then(() => {
+      button.textContent = "⏸ Pause Music";
+    }).catch(() => {
+      button.textContent = "Music unavailable — check internet";
+    });
+  } else {
+    music.pause();
+    button.textContent = "▶ Play Romantic Music";
+  }
+}
+
+function chooseResponse(choice) {
+  const box = document.getElementById("response");
+  box.style.display = "block";
+
+  const messages = {
+    same: "You have no idea how happy that makes me. ❤️ I would love for us to take our time, get to know each other even better, and see where this beautiful feeling leads. Thank you for opening your heart to me. 💕",
+    time: "Of course, Emelda. 🤍 Take all the time you need. I respect your feelings, and there is absolutely no pressure. Whenever you feel ready to talk, I will be happy to listen. 🌷",
+    talk: "That would mean a lot to me. 💌 I would love to hear your thoughts honestly, just as I have shared mine. Let's talk whenever you feel comfortable. ❤️",
+    friend: "Thank you for being honest with me, Emelda. 🤍 I respect your feelings and appreciate you taking the time to respond. Your comfort and happiness matter to me."
+  };
+
+  box.textContent = messages[choice];
+  box.scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+
+function heartBurst(event) {
+  const rect = event.currentTarget.getBoundingClientRect();
+  const x = rect.left + rect.width / 2;
+  const y = rect.top + rect.height / 2;
+
+  for (let i = 0; i < 22; i++) {
+    const particle = document.createElement("span");
+    particle.className = "burst";
+    particle.textContent = Math.random() > .5 ? "💗" : "🌹";
+    particle.style.left = x + "px";
+    particle.style.top = y + "px";
+    particle.style.setProperty("--x", (Math.random()-.5)*300 + "px");
+    particle.style.setProperty("--y", (Math.random()-.5)*300 + "px");
+    document.body.appendChild(particle);
+    setTimeout(() => particle.remove(), 1300);
+  }
+}
+
+for (let i = 0; i < 30; i++) {
+  const petal = document.createElement("div");
+  petal.className = "petal";
+  petal.textContent = Math.random() > .5 ? "🌸" : "♡";
+  petal.style.left = Math.random()*100 + "vw";
+  petal.style.animationDuration = (6+Math.random()*9) + "s";
+  petal.style.animationDelay = Math.random()*8 + "s";
+  petal.style.fontSize = (12+Math.random()*15) + "px";
+  document.body.appendChild(petal);
+}
+
+</script>
+
+</body>
+</html>
+
